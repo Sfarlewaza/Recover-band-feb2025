@@ -1,0 +1,81 @@
+
+
+li {
+    list-style-type: none;
+}
+
+#titlu {
+    background:linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.95)) ;
+    color: white;
+    font-family: monospace;
+    font-weight: bolder;
+    font-size:  3em;
+    text-align: center;
+    margin-top: 13vw;
+    padding-top: 2.5em;
+}
+
+.planuri {
+    background: rgba(0, 0, 0, 0.95);
+    height: 60vh;
+    padding-top: 6vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding-bottom:3vw;
+}
+
+.oferta {
+    overflow: hidden;
+    border: 2px solid white;
+    border-radius: 2vw;
+    color: white;
+    text-align: center;
+    width: 28vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+
+}
+
+#basic span {
+    background: rgb(112, 112, 112);
+}
+
+#standard span {
+    background: rgb(47, 0, 255);
+}
+
+#platinum span {
+    background:rgb(255, 234, 6);
+    color: black;
+}
+
+
+.oferta span {
+    font-family: evil;
+    font-size: 2em;
+    height: 4vw;
+    line-height: 4vw;
+}
+
+.oferta a div {
+    font-size: 2em;
+    font-family: monospace;
+    font-weight: bolder;
+    color: black;
+    background-color: rgb(57, 57, 57);
+    height: 5vw;
+    line-height: 5vw;
+    transition: background 0.16s ease-in;
+}
+
+.oferta a div:hover {
+    background: white;
+}
+
+#incluse {
+    line-height: 5vh;
+}

@@ -1,0 +1,213 @@
+html {
+    scroll-behavior:smooth; /* Smooth scrolling */
+    scroll-padding-top: 20vw; /* Adjust based on the height of your fixed header */
+  }
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: plate;
+    src: url(./fonts/LICENSE\ PLATE\ USA.ttf);
+}
+
+@font-face {
+    font-family: Evil;
+    src: url(./fonts/Evil\ Empire.otf);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    /* margin-top: 6vw; */
+    align-items: center;
+}
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: fixed;
+    height: 6vw;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: background 0.3s ease-in-out, height 0.3s ease-in-out, line-height 0.3s ease-in-out;
+    overflow: hidden;
+    line-height: 6vw;
+    border-bottom: 2px solid rgba(48, 48, 48, 0.737);
+}
+header.scrolled {
+    background: rgb(0, 0, 0);
+    height:3vw;
+    line-height: 3vw;
+}
+
+header:hover {
+    height: 6vw;
+    line-height: 6vw;
+}
+.navbar {
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -10;
+}
+
+#mainTitle {
+    line-height: 100vh;
+    height: 100vh;
+    align-items: center;
+}
+
+#mainTitle span{
+    text-align: center;
+    font-family: Evil;
+    font-size: 10em;
+    color: white;
+    z-index: 0;
+
+}
+
+a div:hover {
+    background-color: rgba(137, 137, 137, 0.454);
+}
+
+nav a {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+nav a div {
+    align-items: center;
+    transition: background 0.1s ease-in;
+    padding-inline: 3vw;
+    height: inherit;
+    line-height: inherit;
+}
+
+a {
+    text-decoration: none;
+    color:white;
+    font-family: monospace;
+    font-size: 1.2em;
+    height: inherit;
+    line-height: inherit;
+}
+
+div span {
+    display: block;
+}
+
+#trupa {
+    padding-top: 1vw;
+    background-color: rgb(255, 115, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    text-align: center;
+    height:20vw;
+}
+
+#trupa span {
+    font-family: plate;
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+}
+
+#trupa a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2vw;
+    height: 3vw;
+}
+
+#trupa a div {
+    font-size: 1.2em;
+    line-height: 5vw;
+    width: 15vw;
+    height: 5vw;
+    background: rgb(255, 158, 46);
+    font-weight: bolder;
+    border-radius: 3vw;
+    transition: background 0.16s ease-in, color 0.16s ease-in;
+}
+
+#trupa a div:hover {
+    background: rgb(255, 255, 255);
+    color: rgb(30, 30, 30);
+}
+
+#footer {
+    border-bottom: 2px solid rgba(48, 48, 48, 0.737);
+    border-top: 2px solid ;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-align: center;
+    height: 15vw;
+    background: rgb(0, 0, 0);
+}
+
+#fa{
+    color: rgb(54, 54, 54);
+    font-family: monospace;
+    font-weight: bold;
+}
+
+#fb {
+    color: rgb(54, 54, 54);
+    font-family: monospace;
+}
+
+#logo   {
+    font-family: evil;
+    font-size: 2em;
+    color: rgb(255, 136, 0);
+}
+
+header a {
+    background:rgba(0, 0, 0, 0);
+}
+
+#noiP {
+    width: 50%;
+    height: 50%;
+    border-radius: 2vw;
+    border: 2px solid white
+}
+
+#despre {
+    background: rgb(0, 0, 0);
+    padding: 6vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+#informatii {
+    color: white;
+    width: 30vw;
+    font-family: monospace;
+    font-size: 1.4em;
+    line-height: 2vw;
+}
